@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Imágenes</h1>
+  <div class="imagen-container">
+    {% for imagen in imagenes %}
+      <img src="{{ imagen1.imagen1.url }}" alt="{{ imagen1.titulo }}">
+      <p>{{ imagen1.descripcion }}</p>
+    {% endfor %}
+  </div>
+{% endblock %}

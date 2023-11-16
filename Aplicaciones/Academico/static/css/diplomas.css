@@ -1,0 +1,32 @@
+/* static/diplomas.css */
+body {
+    background-image: url(bg1.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid gold;
+    padding: 20px;
+}
+
+.body_1 {
+    text-align: left;
+    font-size: 30px;
+    border: 2px solid gold;
+    padding: 20px;
+}
+
+.body_2 {
+    background-image: url(bg2.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: right;
+    font-size: 30px;
+    border: 2px solid gold;
+    padding: 20px;
+}
+
+.download-button {
+    display: block;
+    margin-top: 10px;
+}

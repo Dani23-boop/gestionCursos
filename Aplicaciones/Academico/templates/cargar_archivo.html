@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cargar Archivos</title>
+</head>
+<body>
+    <h1>Cargar Archivos</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="archivo">
+        <button type="submit">Cargar Archivo</button>
+    </form>
+
+    <h2>Archivos Cargados</h2>
+    <ul>
+        {% for archivo in archivos %}
+            <li><a href="{{ archivo.archivo.url }}">{{ archivo.archivo.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
